@@ -13,9 +13,9 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <ReactRoutes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
+        {/* <Route path="/" element={<Navigate to="/home" replace />} /> */}
+        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/home" element={<HomePage />} />
         <Route path="/sample-redux" element={<SimpleReduxPage />} />
       </ReactRoutes>
     </BrowserRouter>
