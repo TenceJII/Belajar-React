@@ -8,6 +8,8 @@ import {
 import HomePage from "pages/home";
 import LoginPage from "pages/login";
 import SimpleReduxPage from "pages/sample-redux";
+import ImagePage from "pages/Image";
+
 
 const Routes = () => {
   return (
@@ -17,6 +19,7 @@ const Routes = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/sample-redux" element={<SimpleReduxPage />} />
+        <Route path="/Image" element={<ImagePage />} />
       </ReactRoutes>
     </BrowserRouter>
   );

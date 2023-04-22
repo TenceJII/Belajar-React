@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 const Layout = ({ title, children }) => {
   const links = [
     {
-      path: "/home",
+      path: "/",
       label: "Home",
     },
     {
@@ -17,7 +17,14 @@ const Layout = ({ title, children }) => {
       path: "/sample-filter",
       label: "Sample Filter",
     },
+
   ];
+
+
+
+
+
+
 
   return (
     <>
@@ -25,7 +32,7 @@ const Layout = ({ title, children }) => {
         <title>{title}</title>
       </Helmet>
       <Header links={links} />
-      <main className="max-w-screen-md px-4 mx-auto pt-[78px]">{children}</main>
+      <main className=" ">{children}</main>
       <Footer />
     </>
   );

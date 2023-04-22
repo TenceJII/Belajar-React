@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SimpleReduxPage = () => {
   return (
-    <Layout>
+    <Layout title="Simple Redux">
       <section >
         Simple Redux
       </section>
