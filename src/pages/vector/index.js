@@ -19,6 +19,35 @@ const VectorPage = () => {
     autoplaySpeed: 3000,
     pauseOnHover: true,
   };
+  const setting = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
+  };
   return (
     <Layout title="vector">
       <section>
@@ -78,16 +107,6 @@ const VectorPage = () => {
             </div>
           </div>
         </Slider>
-        <div className="relative max-w-[983px] cursor-pointer">
-          <div className="relative flex flex-col justify-end rounded-lg">
-            <img
-              src={Setup1}
-              alt=""
-              className="object-cover absolute top-0 left-0  h-[297px] transition-all opacity-95 hover:opacity-100 ease-in-out delay-150 hover:translate-y-1 hover:scale-100 duration-300"
-            ></img>
-            <p className=""></p>
-          </div>
-        </div>
       </section>
     </Layout>
   );

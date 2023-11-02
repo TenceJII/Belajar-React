@@ -54,9 +54,9 @@ const ImagePage = () => {
       <section>
         <Slider
           {...settings}
-          className="m-auto max-w-screen-2xl flex items-center mt-24"
+          className="flex items-center m-auto mt-24 max-w-screen-2xl"
         >
-          <div className="relative p-2 flex justify-center items-center ">
+          <div className="relative flex items-center justify-center p-2 ">
             <img
               src={cross}
               alt=""
@@ -65,19 +65,19 @@ const ImagePage = () => {
           </div>
         </Slider>
 
-        <div className=" max-w-7xl m-auto md:p-5 p-0">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="p-0 m-auto  max-w-7xl md:p-5">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             <div className="grid gap-4">
               <div>
                 <img
-                  className="h-auto max-w-full  sm:w-full  "
+                  className="h-auto max-w-full sm:w-full "
                   src={China}
                   alt=""
                 ></img>
               </div>
               <div>
                 <img
-                  className="h-auto max-w-full  sm:w-full  "
+                  className="h-auto max-w-full sm:w-full "
                   src={Grave}
                   alt=""
                 ></img>
@@ -95,7 +95,7 @@ const ImagePage = () => {
                 <img className="h-auto max-w-full " src={Grave} alt=""></img>
               </div>
               <div>
-                <img className="h-auto max-w-full  " src={Smoke} alt=""></img>
+                <img className="h-auto max-w-full " src={Smoke} alt=""></img>
               </div>
               <div>
                 <img className="h-auto max-w-full " src={karl} alt=""></img>
@@ -103,7 +103,7 @@ const ImagePage = () => {
             </div>
             <div className="grid gap-4">
               <div>
-                <img className="h-auto max-w-full  " src={Ridgo} alt=""></img>
+                <img className="h-auto max-w-full " src={Ridgo} alt=""></img>
               </div>
               <div>
                 <img className="h-auto max-w-full " src={China} alt=""></img>
